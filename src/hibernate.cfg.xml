@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <!--<property name="connection.url">jdbc:mysql://localhost:3306/pruebahibernate</property>-->
+        <property name="connection.url">jdbc:postgresql://localhost:5432/log_bd</property>
+        <!--<property name="connection.username">root</property>-->
+        <property name="connection.username">Irene</property>
+        <!--<property name="connection.password"></property>-->
+        <property name="connection.password">12QWASzx</property>
+        <!--<property name="connection.pool_size">1</property>-->
+        <!--<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>-->
+        <!--<property name="dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>-->
+        <property name="show_sql">true</property> 
+        <!--<property name="hbm2ddl.auto">create-drop</property>-->
+        
+        <mapping class="entidades.Usuario" />
+        <!--<mapping class="entidades.Rol" />-->
+        <mapping class="entidades.Sesion" />
+        <!--<mapping class="entidades.UsuarioRol" />-->
+        <!--<mapping class="entidades.Funcion" />-->
+    </session-factory>
+</hibernate-configuration>
